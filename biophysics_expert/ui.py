@@ -245,10 +245,28 @@ def launch_ui(expert=None):
                     </div>
                     """))
     
-    # Instructions
+     # Instructions
     display(HTML("""
     <div style="background-color: #e8f0fe; padding: 15px; border-radius: 8px; margin-top: 20px;">
         <h3 style="color: #1a73e8;">Instructions</h3>
         <h4>Search by Known Variables</h4>
         <ol>
-            <li><strong>Select multiple variables</strong> by holding down Ctrl (or Cmd on Mac)
+            <li><strong>Select multiple variables</strong> by holding down Ctrl (or Cmd on Mac) while clicking on different variables</li>
+            <li>Adjust the minimum match percentage if needed</li>
+            <li>Click "Find Matching Formulas"</li>
+        </ol>
+        <h4>Search by Unknown</h4>
+        <ol>
+            <li>Select the variable you want to calculate</li>
+            <li>Click "Find Formulas"</li>
+        </ol>
+        <h4>Tips</h4>
+        <ul>
+            <li>Higher match percentages give more relevant but fewer results</li>
+            <li>Check the "missing" variables to see what else you need to measure</li>
+            <li>View the "All Formulas" tab to browse the complete collection</li>
+        </ul>
+    </div>
+    """))
+
+    print("Expert system ready! Use the tabs above to search for formulas.")
