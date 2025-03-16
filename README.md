@@ -19,7 +19,7 @@ BiophysicsExpert is an educational tool that provides a searchable database of b
 You can install the package directly from Google Colab:
 
 ```python
-!pip install git+https://github.com/yourusername/biophysics_expert.git
+!pip install git+https://github.com/evanpeikon/biophysics_expert.git
 ```
 
 ## Usage
