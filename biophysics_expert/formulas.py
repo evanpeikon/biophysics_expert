@@ -1171,7 +1171,23 @@ DEFAULT_FORMULAS = [
   "LaTeX": "\\frac{dh}{dt} = \\alpha_h(1-h) - \\beta_h h",
   "Variables": ["αh", "βh", "h"],
   "Additional_Info": "Where αh is the inactivation rate constant, βh is the removal of inactivation rate constant, and h is the current inactivation state."
-}    
+},
+    {
+"Formula_Name": "Frequency of Neutron",
+"Unknown": "v",
+"Formula": "v = \frac{λ}{τ} = \frac{1}{C_m\sqrt{R_m}}",
+"LaTeX": "v = \\frac{\\lambda}{\\tau} = \\frac{1}{C_m\\sqrt{R_m}}",
+"Variables": ["λ", "τ", "Cm", "Rm"],
+"Additional_Info": "Where v is frequency, λ is wavelength, τ is period, Cm is capacitance, and Rm is resistance."
+},
+    {
+"Formula_Name": "Chemical Potential of Component i",
+"Unknown": "μi",
+"Formula": "μ_i = μ_i^0 + RT ln(f_iX_i)",
+"LaTeX": "\\mu_i = \\mu_i^0 + RT \\ln(f_iX_i)",
+"Variables": ["μi^0", "R", "T", "fi", "Xi"],
+"Additional_Info": "Where μi is the chemical potential of component i, μi^0 is the standard chemical potential, R is the gas constant, T is the temperature, fi is the coefficient of chemical activity, and Xi is the molar fraction of component i."
+}
 ]
 
 def get_default_formulas():
